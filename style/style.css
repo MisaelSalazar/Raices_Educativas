@@ -1,0 +1,15 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/fondo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main{
+
+    margin-top: 5%;
+    margin-left: 30%;
+
+}
