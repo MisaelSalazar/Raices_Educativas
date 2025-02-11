@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff40ff;
+    background-image: url("../img/fondo.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+a{
+    text-decoration: none;
+    margin: 0%;
+}
+
+main{
+    height: 100%;
+}
+
+#contenedorBotones{
+    background-color: aqua;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+#mapaImagen{
+    width: 80%;
+    height: 30%;
+    margin-top: 5px;
+}
+.texto{
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 2rem;
+    line-height: 2;
+}
+.texto img{
+    width: 70%;
+}

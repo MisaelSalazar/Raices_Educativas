@@ -1,0 +1,53 @@
+/* Estilos para la barra de navegación superior */
+#top-bar {
+  background-color: #7C9D3A;
+  color: white;
+  font-weight: bold;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+}
+
+/* Estilos para el botón del menú hamburguesa */
+#menu-btn {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el icono del menú hamburguesa */
+#menu-btn svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Estilos para el menú desplegable */
+#menu-container {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #6e9948;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los elementos del menú */
+.menu-item {
+  padding: 10px 0;
+  color: #FFFFFF;
+  font-size: large;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+/* Cambio de color al pasar el ratón sobre los elementos del menú */
+.menu-item:hover {
+  color: #E5B148; /* Amarillo */
+}

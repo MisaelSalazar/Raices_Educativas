@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soy Maestro</title>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .puzzle-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            width: 315px;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .piece {
+            width: 100px;
+            height: 100px;
+            background-size: 300px 300px;
+            border: 1px solid #000;
+            cursor: grab;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="navbar bg-success text-light p-4">
+
+        <h1>
+            <img src="../public/twemoji/1f3ae.png" alt="emoji de cara feliz" width="50" height="50">
+            Rompecabezas
+        </h1>
+
+    </header>
+    <br><br><br>
+
+    <center>
+
+        <div class="puzzle-container" id="puzzle"></div>
+    <script>
+        const puzzle = document.getElementById("puzzle");
+        const imgSrc = "../img/personajes_principal.webp"; // Cambia esta URL por la de tu imagen
+        let pieces = [];
+
+        for (let i = 0; i < 9; i++) {
+            let piece = document.createElement("div");
+            piece.classList.add("piece");
+            piece.style.backgroundImage = `url(${imgSrc})`;
+            piece.style.backgroundPosition = `${-(i % 3) * 100}px ${-Math.floor(i / 3) * 100}px`;
+            piece.draggable = true;
+            piece.setAttribute("data-index", i);
+            pieces.push(piece);
+        }
+
+        pieces = pieces.sort(() => Math.random() - 0.5);
+        pieces.forEach(piece => puzzle.appendChild(piece));
+
+        let dragged = null;
+
+        puzzle.addEventListener("dragstart", (e) => {
+            dragged = e.target;
+        });
+
+        puzzle.addEventListener("dragover", (e) => {
+            e.preventDefault();
+        });
+
+        puzzle.addEventListener("drop", (e) => {
+            if (e.target.classList.contains("piece")) {
+                let tempIndex = dragged.getAttribute("data-index");
+                dragged.setAttribute("data-index", e.target.getAttribute("data-index"));
+                e.target.setAttribute("data-index", tempIndex);
+
+                let tempHTML = dragged.outerHTML;
+                dragged.outerHTML = e.target.outerHTML;
+                e.target.outerHTML = tempHTML;
+            }
+        });
+    </script>
+
+    </center>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.container{
+    box-sizing: border-box;
+    width: 90%;
+    background-color: white;
+    margin-top: 10rem;
+    padding: 1rem;
+    vertical-align: middle;
+    border-radius: 2rem;
+}
+
+.input-group{
+   font-size: large;
+   margin-top: 1rem;
+}
+
+.input-group label{
+    display: block;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.input-group input[type="text"]{
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.input-group input[type="password"]{
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#iniciar{
+    font-size: large;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #6e9948;
+    margin: 2rem;
+}

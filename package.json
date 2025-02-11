@@ -1,0 +1,21 @@
+{
+  "name": "raices_educativas",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisaelSalazar/Raices_Educativas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisaelSalazar/Raices_Educativas/issues"
+  },
+  "homepage": "https://github.com/MisaelSalazar/Raices_Educativas#readme",
+  "description": ""
+}

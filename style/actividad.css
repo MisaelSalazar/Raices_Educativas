@@ -1,0 +1,36 @@
+/* Estilos básicos para la página */
+img {
+    width: 20%;
+    /* height: 200px; */
+    border: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+/* .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+} */
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    width: 10%;
+    background-color: #DC5E2C;
+    border-style: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: large;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#btn1{
+    margin-left: 10px;
+}
+
+#btnReiniciar{
+    width: 10%;
+    background-color: #CD3462;
+}

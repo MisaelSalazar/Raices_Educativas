@@ -1,0 +1,16 @@
+.mapa{
+    box-sizing: border-box;
+    border-radius: 6%;
+    width: 90%;
+    height: 25rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 3rem;
+}
+.contenedor{
+    box-sizing: border-box;
+    width: 90%;
+    background-color: white;
+    border-radius: 6%;
+    padding: 5%;
+}

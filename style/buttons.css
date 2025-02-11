@@ -1,0 +1,58 @@
+
+#nahuatl{
+    background-image: url("../img/btn_nahuatl.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: none;
+    width: 30%;
+    height: 3rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#tenek{
+    background-image: url("../img/btn_tenek.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: none;
+    width: 30%;
+    height: 3rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#pame{
+    background-image: url("../img/btn_xioi.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: none;
+    width: 30%;
+    height: 3rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.btnCategoria{
+    height: 6rem;
+    margin-top: 2rem;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.btnCategoria.show {
+    transform: translateX(0);
+    opacity: 1;
+    width: 14%;
+    margin: 3rem;
+}
+
+.botonCarrusel{
+    background-color: #DC5E2C;
+    padding: 1rem;
+    margin: 2%;
+    border-style: solid;
+    border-radius: 2rem;
+    font-size: large;
+    color: white;
+    border-color: #A74620;
+}

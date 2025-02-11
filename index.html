@@ -55,7 +55,7 @@
 
                     <div class="col">
 
-                        <input type="text" class="h3">
+                        <input type="text" class="h3" id="username">
 
                     </div>
 
@@ -72,7 +72,7 @@
 
                     <div class="col">
 
-                        <input type="password" class="h3">
+                        <input id="password" type="password" class="h3">
 
                     </div>
 
@@ -102,7 +102,9 @@
                 </div>
 
                 <center>
-                    <input type="submit" value="Entrar" class="h2 display-1 text-light btn btn-primary m-4 p-3 w-25">
+                    <a href="views/home.html" class="h2 display-1 text-light btn btn-primary m-4 p-3 w-25">Entrar</a>
+                    <!-- <input id="loginButton" type="submit" value="Entrar"
+                        class="h2 display-1 text-light btn btn-primary m-4 p-3 w-25"> -->
                 </center>
 
                 <center>
@@ -112,7 +114,8 @@
 
                             <div class="col">
 
-                                <img src="/public/twemoji/1f468-200d-1f3eb.png" alt="emoji de cara feliz" width="32" height="32">
+                                <img src="/public/twemoji/1f468-200d-1f3eb.png" alt="emoji de cara feliz" width="32"
+                                    height="32">
                                 <a href="/views/maestros.html" class="text-black">Soy maestro</a>
 
                             </div>
@@ -133,6 +136,29 @@
         </div>
 
     </main>
+
+
+    <!-- <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("loginButton").addEventListener("click", function () {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+
+                const validUsername = "admin";
+                const validPassword = "1234";
+
+                if (username === validUsername && password === validPassword) {
+                    alert("Inicio de sesión exitoso");
+                    window.location.href = "dashboard.html";
+                } else {
+                    alert("Nombre de usuario o contraseña incorrectos");
+                }
+            });
+        });
+
+
+    </script> -->
 
 </body>
 
