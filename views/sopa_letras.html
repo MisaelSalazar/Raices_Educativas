@@ -67,8 +67,8 @@
     <center>
 
         <h1>Sopa de Letras</h1>
-    <div class="grid" id="grid"></div>
-    <div class="word-list">
+    <div class="grid inline-block" id="grid"></div>
+    <div class="word-list card w-25 inline-block alert alert-warning">
         <h2>Palabras a encontrar:</h2>
         <p id="word-list"></p>
     </div>
@@ -113,7 +113,7 @@
             }
 
             words.forEach(word => {
-                let listItem = document.createElement("li");
+                let listItem = document.createElement("p");
                 listItem.textContent = word;
                 listItem.dataset.word = word;
                 wordListElement.appendChild(listItem);
